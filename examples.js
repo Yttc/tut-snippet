@@ -69,14 +69,14 @@ f %= 5; // f = f % 5
 var t0 = true, t1 = true;
 var f0 = false, f1 = false;
 t0
-!t0 // ! 為否定
+!t0 // ! 為"否定"的意思
 f0
 !f0
 
-t0 && t1 // 而且，當所有條件都成立時才成立
+t0 && t1 // "而且"，當所有條件都成立時才成立
 t0 && f0
 f0 && f1
-t0 || f0 // 或者，只要有一個條件成立就成立
+t0 || f0 // "或者"，只要有一個條件成立就成立
 f0 || f1
 t0 || t1
 // && 真正的意義是當先行的運算元可以被轉成 true 時回傳之後的運算元
@@ -95,3 +95,41 @@ m === 20
 m !== 20
 m === '20' // 由於不轉換資料型態 此行比較結果為假
 m !== '20'
+
+// For episode 6 ----------
+
+// 印出東西到 JavaScript console
+console.log('Just wanted to say hello');
+
+var day = 1;
+
+// if 就是"如果"的意思
+// else 就是"不然"
+// else if 是"不然如果""
+
+if (day === 1) {
+  // 這是星期一
+  console.log('This is Monday');
+}
+
+if (day === 1) {
+  console.log('This is Monday');
+} else {
+  console.log('This is not Monday');
+}
+
+if (day === 1) {
+  console.log('This is Monday');
+} else if (day === 2) {
+  console.log('This is Tuesday');
+} else if (day === 3) {
+  console.log('This is Wednesday');
+} else {
+  console.log('Good day anyway');
+}
+
+if (day === 6 || day === 7) {
+  console.log('Happy weekend!!!');
+} else {
+  console.log('Not so happy');
+}
