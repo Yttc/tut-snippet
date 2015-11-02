@@ -133,3 +133,37 @@ if (day === 6 || day === 7) {
 } else {
   console.log('Not so happy');
 }
+
+// For episode 7 ----------
+
+var i = 0;
+while (i < 10) {
+  i = i + 1;
+  console.log('Number of laps = ' + i);
+}
+
+var i = 0;
+while (i < 10) {
+  i = i + 1;
+  console.log('Number of laps = ' + i);
+  if (i === 5) {
+    break;
+  }
+}
+
+var i = 0;
+while (i < 10) {
+  i = i + 1;
+  if (i === 7) {
+    continue;
+  }
+  console.log('Number of laps = ' + i);
+}
+
+// 未介紹 do...while，有興趣的朋友請參考
+// https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/do...while
+
+for (var i = 0; i < 10; i++) {
+  console.log('Number of laps = ' + i);
+}
+
