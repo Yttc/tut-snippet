@@ -167,3 +167,47 @@ for (var i = 0; i < 10; i++) {
   console.log('Number of laps = ' + i);
 }
 
+// For episode 8 ----------
+
+// 陣列(Array) 條狀(1維)容器
+
+var a = [];
+var c = [6, 4, 2, 9];
+var b = [5, 17];
+
+// 容器使用方法 ----
+// 1. 取特定位置的值 利用索引(index)
+//console.log(c[3]);
+
+// 2. 長度
+//console.log(b.length);
+
+// 3. 從尾巴新增項目
+b.push(13);
+
+// 4. 從尾巴抽取項目
+b.pop();
+
+// 5. 從頭新增項目
+b.unshift(7);
+
+// 6. 從頭抽取項目
+b.shift();
+
+// 7. 接合
+b.splice(1, 1, 13, 3);
+b.splice(1, 1);
+b.splice(1, 0, 6, 29);
+
+
+//console.log('b');
+//console.log(b);
+
+// 8. 求特定值之索引
+//console.log(c.indexOf(29));
+//console.log(b.indexOf(29));
+
+// 9. 逐個讀出
+for (var i = 0, len = b.length; i < len; i++) {
+    console.log(b[i]);
+}
