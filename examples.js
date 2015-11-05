@@ -211,3 +211,66 @@ b.splice(1, 0, 6, 29);
 for (var i = 0, len = b.length; i < len; i++) {
     console.log(b[i]);
 }
+
+// For episode 9 ----------
+// 1.
+// make(製造商), numberOfWheels(輪子數), 
+// displacement(排氣量), habitat(棲息地)
+
+// 2.
+// rank(號碼), suit(花色), 
+// color(顏色), bloodType(血型)
+
+// {}, {屬性名:值, 屬性名:值, .....}
+var a = {};
+var myCar = {
+    make: 'Nissan',
+    numberOfWheels: 4,
+    displacement: 3800
+};
+var hisCard = {
+    rank: 5,
+    suit: 'spade',
+    color: 'black'
+};
+
+/*
+console.log('a');
+console.log(a);
+console.log('myCar');
+console.log(myCar);
+console.log('hisCard');
+console.log(hisCard);
+*/
+
+// 如何取得物件某個屬性的值
+//console.log(myCar.make);
+
+// 改值
+/*
+hisCard.rank = 10;
+hisCard.suit = 'heart';
+hisCard.color = 'red';
+
+console.log(hisCard);
+*/
+// 動態綁上新屬性
+myCar.year = 2013;
+myCar.model = 'GTR';
+
+//console.log(myCar);
+
+// 參考(reference)，可以想成是"把手"
+var a = 17;
+var b = a;
+a = 29;
+
+//console.log(a);
+//console.log(b);
+var herCard = hisCard;
+hisCard.rank = 12;
+hisCard.suit = 'diamond';
+hisCard.red = 'red';
+
+console.log(hisCard);
+console.log(herCard);
