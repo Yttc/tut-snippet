@@ -274,3 +274,35 @@ hisCard.red = 'red';
 
 console.log(hisCard);
 console.log(herCard);
+
+// For episode 10 ----------
+// 介紹內建模組Math的兩個函式Math.ceil, Math.random
+// Math.ceil(x) 在大於或等於x的整數之中取最小的一個
+//console.log(Math.ceil(-0.5));
+
+// Math.random() 取一個大於等於0而且小於1的數 (0 <= y < 1)
+//console.log(Math.random());
+
+// 開始擲骰子
+/*
+function rollDice(maxValue) {
+    var tmp = Math.random() * maxValue;
+    var n = Math.ceil(tmp);
+    console.log('Just rolled the dice and got ' + n);       
+    return n;
+}*/
+var rollDice = function(maxValue) {
+    var tmp = Math.random() * maxValue;
+    var n = Math.ceil(tmp);
+    console.log('Just rolled the dice and got ' + n);       
+    return n;
+};
+
+var n0, n1, n2;
+n0 = rollDice(37);
+n1 = rollDice(37);
+n2 = rollDice(37);
+
+console.log(n0);
+console.log(n1);
+console.log(n2);
