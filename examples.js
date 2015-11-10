@@ -306,3 +306,43 @@ n2 = rollDice(37);
 console.log(n0);
 console.log(n1);
 console.log(n2);
+
+// For episode 11 ----------
+// scope 可視範圍, execution context 執行環境
+
+// 全域(global) 藍色
+
+var who = 'Steph';
+/*
+var move = function() { // 紅色
+    var n = Math.ceil(Math.random() * 7);
+    console.log(who + ' made ' + n + ' three pointer(s)');
+};
+move();
+*/
+
+/*
+var makeMoveFunction = function() { // 紅色
+    var who = 'LeBron';
+    // 回傳一個函式
+    return function(troll) { // 綠色
+        var n = Math.ceil(Math.random() * 6);
+        if (troll) {
+            var m = who + ' took ' + n + ' step(s)';
+        } else {
+            var m = who + ' made ' + n + ' three pointer(s)';
+        }
+        console.log(m);
+    };
+};
+var move = makeMoveFunction();
+move(false);
+move(true);
+*/
+
+
+function hoistMe() {
+    console.log(mm);
+    var mm = 1007;
+}
+hoistMe();
