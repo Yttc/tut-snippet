@@ -312,33 +312,35 @@ console.log(n2);
 
 // 全域(global) 藍色
 
-var who = 'Steph';
 /*
+var who = 'Steph';
 var move = function() { // 紅色
     var n = Math.ceil(Math.random() * 7);
-    console.log(who + ' made ' + n + ' three pointer(s)');
+    console.log(who + ' made ' + n + ' three(s)');
 };
 move();
 */
 
 /*
+var who = 'Steph';
 var makeMoveFunction = function() { // 紅色
     var who = 'LeBron';
     // 回傳一個函式
-    return function(troll) { // 綠色
+    return function() { // 綠色
         var n = Math.ceil(Math.random() * 6);
-        if (troll) {
+        if (n % 2 === 0) {
             var m = who + ' took ' + n + ' step(s)';
         } else {
-            var m = who + ' made ' + n + ' three pointer(s)';
+            var m = who + ' made ' + n + ' three(s)';
         }
         console.log(m);
     };
 };
 var move = makeMoveFunction();
-move(false);
-move(true);
+move();
+move();
 */
+
 
 
 function hoistMe() {
