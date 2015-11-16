@@ -348,3 +348,52 @@ function hoistMe() {
     var mm = 1007;
 }
 hoistMe();
+
+// For episode 12 ----------
+// this字面意義為"這個" 把this想成函式裡的主角
+
+var myShip = {
+    x: 20,
+    y: 45
+    
+};
+
+var yourShip = {
+    x: 150,
+    y: 2048,
+    getLocation: function() {
+        console.log('x = ' + this.x + ', y = ' + this.y);
+    }
+};
+
+function getShipLocation() {
+    console.log('x = ' + this.x + ', y = ' + this.y);
+}
+
+function testThis() {
+    console.log(this);
+}
+
+// 先看看yourShip的函式getLocation
+//yourShip.getLocation();
+//getShipLocation();
+
+// 純粹測試this
+//testThis();
+//testThis.call(myShip);
+
+// 看看getShipLocation如何找this
+//var x = 768, y = 2048;
+//getShipLocation();
+
+// 再看一次yourShip
+//yourShip.getLocation();
+//myShip.getLocation();           
+//yourShip.getLocation.call(myShip);
+//yourShip.getLocation.call(yourShip);            
+
+// 函式裡的this跟函式定義的位置無關
+// 函式裡的this只跟函式被呼叫的時候誰在焦點有關係            
+//getShipLocation();
+//getShipLocation.call(myShip);
+//getShipLocation.call(yourShip);
