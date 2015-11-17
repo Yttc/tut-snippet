@@ -397,3 +397,27 @@ function testThis() {
 //getShipLocation();
 //getShipLocation.call(myShip);
 //getShipLocation.call(yourShip);
+
+// For episode 13 ----------
+// callback 回呼
+
+function shout() {
+    console.log('HELLO! IS IT ME YOU ARE LOOKING FOR?');
+}
+
+function countToSeven(cb) {
+    for (var i = 1; i <= 7; i++) {
+        console.log(i);
+    }
+    if (typeof cb === 'function')
+        cb();
+}
+
+countToSeven(shout);
+
+
+// 每隔幾毫秒做一次
+//setInterval(shout, 2 * 1000);
+
+// 幾豪廟之後做
+//setTimeout(shout, 1 * 1000);
